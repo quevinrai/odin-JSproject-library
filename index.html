@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ODIN JS Project: Library</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/e31e60239e.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="addBookOption hide">
+        <div class="backdrop"></div>
+        <form class="card formAddBook">
+            <article class="book bookAuthor">
+                <p class="bookCategory">Author:</p>
+                <input type="text" name="author" id="input-author">
+            </article>
+            <article class="book bookTitle">
+                <p class="bookCategory">Title:</p>
+                <input type="text" name="title" id="input-title">
+            </article>
+            <article class="book bookPages">
+                <p class="bookCategory">No. of Pages:</p>
+                <input type="number" name="pages" id="input-pages">
+            </article>
+            <article class="book bookIsRead">
+                <p class="bookCategory">Read?</p>
+                <select name="isReadOptions" id="input-read">
+                    <option disabled selected value>--</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </article>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <main class="main">
+        <h1>Q's Library</h1>
+
+        <section class="library">
+            <section class="card cardEmpty">
+                <i class="fa-solid fa-circle-plus"></i>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
